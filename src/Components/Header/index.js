@@ -6,11 +6,11 @@ import './Header.css';
 class Header extends Component {
   render() {
     return (
-      <header className="pt-4">
+      <div className="pt-4 head">
         <div className="text-center"> Memory Challenge </div>
         <Info />
         <Option />
-      </header>
+      </div>
     );
   }
 }

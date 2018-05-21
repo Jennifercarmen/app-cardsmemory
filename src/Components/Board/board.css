@@ -1,0 +1,11 @@
+.board{
+    background-color: #00451b;
+}
+.card{
+    width: 150px;
+    height: 150px;
+    background-color: steelblue;
+}
+.col-xl-3{
+    width: 130px;
+}
