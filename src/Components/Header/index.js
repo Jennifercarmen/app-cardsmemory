@@ -1,18 +1,15 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Info from './info.js';
 import Option from './options.js';
 import './Header.css';
 
-class Header extends Component {
-  render() {
-    return (
-      <div className="pt-4 head">
-        <div className="text-center"> Memory Challenge </div>
-        <Info />
-        <Option />
-      </div>
-    );
-  }
-}
+const Header = () => (
+  <div className="pt-4 head">
+    <div className="text-center"> Memory Challenge </div>
+    <Info />
+    <Option />
+  </div>
+);
+
 
 export default Header;

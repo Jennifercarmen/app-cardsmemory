@@ -1,14 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class info extends Component {
-    render() {
-        return (
-            <div className="text-center">
-               Intentos:
-               
-            </div>
-        );
-    }
-}
+const Info = () => (
+  <div className="text-center">
+    Intentos:          
+  </div>
+);  
 
-export default info;
+export default Info;

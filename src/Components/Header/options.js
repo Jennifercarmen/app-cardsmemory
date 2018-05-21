@@ -1,16 +1,13 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-class options extends Component {
-    render() {
-        return (
-            <div className="text-center">
-                <button>
-                    Reiniciar
-          </button>
-            </div>
+const Options = () => (
+  <div className="text-center">
+    <button>
+      Reiniciar
+   </button>
+  </div>
 
-        );
-    }
-}
+);
 
-export default options;
+
+export default Options;

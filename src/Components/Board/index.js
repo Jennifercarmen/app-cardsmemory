@@ -1,26 +1,25 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Card from './card';
 import './board.css';
+import PropTypes from 'prop-types';
 
-class Board extends Component {
-    render() {
-        return (
-            <div class="Board py-1 px-2 ">
-                <div class="container">
-                    <div class="row d-flex justify-content-center">
-                        <div class="col-md-3 col-sm-3 col-xl-3 d-flex justify-content-center"><Card /></div>
-                        <div class="col-md-3 col-sm-3 col-xl-3 d-flex justify-content-center"><Card /></div>
-                        <div class="col-md-3 col-sm-3 col-xl-3 d-flex justify-content-center"><Card /></div>
-                        <div class="col-md-3 col-sm-3 col-xl-3 d-flex justify-content-center"><Card /></div>
-                        <div class="col-md-3 col-sm-3 col-xl-3 d-flex justify-content-center"><Card /></div>
-                        <div class="col-md-3 col-sm-3 col-xl-3 d-flex justify-content-center"><Card /></div>
-                        <div class="col-md-3 col-sm-3 col-xl-3 d-flex justify-content-center"><Card /></div>
-                        <div class="col-md-3 col-sm-3 col-xl-3 d-flex justify-content-center"><Card /></div>
-                    </div>
-                </div>
-            </div>
-        );
-    }
+// Aplicando destructuring
+
+const Board = ({ board }) => (
+  <div className="board py-1 px-2 ">
+    <div className="container">
+      <div className="row d-flex justify-content-center">
+        {
+          board.map((card, index) => (
+            <Card key={index} image={card.image} />))
+        }
+      </div>
+    </div>
+  </div>
+)
+
+Board.propTypes = {
+  board: PropTypes.array.isRequired
 }
 
 export default Board;
