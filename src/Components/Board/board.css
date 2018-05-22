@@ -1,9 +1,15 @@
-.board{
+.board {
     background-color: #00451b;
 }
-.col-xl-3{
+.col-xl-3 {
     width: 130px;
 }
-img {
+img.img-fluid {
     height: 180px;
+}
+.sc-bdVaJa.dXHjtu {
+    background: transparent;
+}
+.sc-bdVaJa.bemMyR {
+    background: transparent;
 }

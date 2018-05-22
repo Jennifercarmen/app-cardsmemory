@@ -4,7 +4,6 @@ import './board.css';
 import PropTypes from 'prop-types';
 
 // Aplicando destructuring
-
 const Board = ({ board }) => (
   <div className="board py-1 px-2 ">
     <div className="container">

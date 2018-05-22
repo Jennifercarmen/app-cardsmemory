@@ -7,10 +7,12 @@ import getCardsList from './Services/getCardsList';
 class App extends Component {
   constructor() {
     super();
-    this.state = { board: getCardsList() };
+    this.state = { board: getCardsList(),
+    
+    };
     };
   render() {
-    
+
     const { board }=this.state;
 
     return (
